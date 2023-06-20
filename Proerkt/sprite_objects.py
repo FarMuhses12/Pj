@@ -169,11 +169,9 @@ class SpriteObject:
         self.shift = parameters['shift']
         self.scale = parameters['scale']
         self.animation = parameters['animation'].copy()
-        # ---------------------
         self.death_animation = parameters['death_animation'].copy()
         self.is_dead = parameters['is_dead']
         self.dead_shift = parameters['dead_shift']
-        # ---------------------
         self.animation_dist = parameters['animation_dist']
         self.animation_speed = parameters['animation_speed']
         self.blocked = parameters['blocked']

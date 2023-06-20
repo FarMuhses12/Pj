@@ -20,10 +20,10 @@ class Drawing:
                          4: pygame.image.load('img/wall6.png').convert(),
                          'S': pygame.image.load('img/sky2.png').convert()
                          }
-        # menu
+
         self.menu_trigger = True
         self.menu_picture = pygame.image.load('img/bg.jpg').convert()
-        # weapon parameters
+
         self.weapon_base_sprite = pygame.image.load('sprites/weapons/shotgun/base/0.png').convert_alpha()
         self.weapon_shot_animation = deque([pygame.image.load(f'sprites/weapons/shotgun/shot/{i}.png').convert_alpha()
                                             for i in range(20)])
@@ -35,7 +35,7 @@ class Drawing:
         self.shot_animation_count = 0
         self.shot_animation_trigger = True
         self.shot_sound = pygame.mixer.Sound('sound/shotgun.wav')
-        # sfx parameters
+
         self.sfx = deque([pygame.image.load(f'sprites/weapons/sfx/{i}.png').convert_alpha() for i in range(9)])
         self.sfx_length_count = 0
         self.sfx_length = len(self.sfx)
